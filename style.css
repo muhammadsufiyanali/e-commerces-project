@@ -8,8 +8,9 @@ body{
     
  } 
  #logo{
-   width: 100px;
-   height: 34px; 
+   width: 8rem;
+   height: 4rem;
+   padding-left: 20px; 
 }
 .navbar{
     display: flex;
@@ -142,3 +143,43 @@ i:hover{
   }
   
 }
+.category{
+  padding-top: 3rem;
+}
+.category-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding: 20px;
+  gap: 5rem;
+}
+.card-img{
+  width: 10rem;
+  height: 8rem;
+}
+.category{
+  width: 8rem;
+  height: 5rem;
+}
+.heading{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+.pera{
+  color: #7a0505;
+}
+.text-contaier{
+  padding: 40px;
+  padding-top: 60px;
+}
+.p-heading{
+  padding: 40px;
+}
+
+.add{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
