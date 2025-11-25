@@ -57,7 +57,7 @@ watch.addEventListener("click",()=>{
       let watch_div = document.createElement("div");
       add.appendChild(watch_div);
       watch_div.innerHTML = `
-      <img src = "${ifwatch[i].img_url}">
+      <img src = "${ifwatch[i].img_url}" width = 200px>
       <p>Name:${ifwatch[i].Product_name}</p>
       `
    }
@@ -70,7 +70,7 @@ headphone.addEventListener("click",()=>{
       let headphone_div = document.createElement("div");
       add.appendChild(headphone_div);
       headphone_div.innerHTML = `
-      <img src = "${ifheadphone[i].img_url}">
+      <img src = "${ifheadphone[i].img_url}" >
       <p>Name:${ifheadphone[i].Product_name}</p>
       `
    }
