@@ -112,6 +112,7 @@ i:hover{
 }
 .home-text{
   padding-top: 1rem;
+ 
 }
 .home-btn{
   width: 5.5rem;
@@ -140,6 +141,19 @@ i:hover{
     height: 28rem;
     align-items: center;
     padding-top: 2rem;
+  }
+  .home-text{
+    text-align: center;
+  }
+  .home-heading{
+    text-align: center;
+  }
+  .home-btn{
+    margin-left: 9rem;
+
+  }
+  .name{
+    text-align: center;
   }
   
 }
