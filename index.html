@@ -1,93 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eTrade — Phones, Laptops, Watches & Audio | Online Electronics Store</title>
+  <meta name="description" content="Shop the latest smartphones, laptops, smart watches, headphones and accessories at eTrade. Fast delivery, easy returns and secure payments.">
+  <meta name="theme-color" content="#1a8fdd">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230f172a'/%3E%3Ctext x='50' y='70' font-size='64' font-family='Arial' font-weight='700' fill='%231a8fdd' text-anchor='middle'%3Ee%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="main">
-        <section class="navbar">
-           <div class="navbar1">
-               <img id="logo" src="./about/logo.png" alt="">
-           </div>
-           <div id="links"class="nav-links">
-               <a  href="#Home">Home</a>
-               <a  href="#About">About</a>
-               <a href="#blog">blog</a>
-               <a href="#Contact">Contact</a> 
-           </div>
-           <div class="navbar3">  
-               <i class="fa-solid fa-magnifying-glass"></i>
-               <i class="fa-solid fa-cart-shopping"></i> 
-               <i class="fa-solid fa-user"></i>
-           </div> 
-           <span id="menu-btn" class="menu-btn">☰</span>
-       </section>
-       <section id="#Home">
-        <div class="home">
-           <div class="left-container">
-                <p class="name">Wireless Headphones</p>
-                <h1 class="home-heading">Rocu Wireless <br> Headphone</h1>
-                <p class="home-text">Experience next-level wireless gaming audio with the <br>
-                    ASTRO A50 Wireless + Base Station. Engineered for <br>
-                    pro-grade performance, the ASTRO A50 delivers superior <br>
-                    sound quality, unrivaled comfort, and advanced features <br>
-                    to elevate your gaming experience.
-                </p> 
-                <button class="home-btn">Shop now</button>
-           </div>
-           <div class="right-container">
-            <img class="home-img" src="./about/home-img.png" alt="">
-           </div>
-       </section>
-       </div>
-    </div>
-    <div class="text-contaier">
-        <p class="pera">category</p>
-        <h1 class="heading">brower by category</h1>
-    </div>
-    <div class="category-section">
-        <div class="phone" >
-          <img src="./about/category-phone.png" class="card-img" alt="...">
-       <div class="card-body">
-          <h5 class="card-title">phone</h5>
-       </div>
-       </div>
+  <div id="site-header"></div>
 
-        <div class="laptop">
-           <img src="./about/category-laptop.jpeg" class="card-img" alt="...">
-        <div class="card-body">
-           <h5 class="card-title">laptop</h5>
-       </div>
-       </div>
-        <div class="watch" >
-           <img src="./about/category-watch.jpeg" class="card-img" alt="...">
-        <div class="card-body">
-           <h5 class="smart watch">smart watch</h5>
-       </div>
-       </div>
-        <div class="headphone">
-           <img src="./about/category-headphone.png" class="card-img" alt="...">
-           <h5 class="headphone">headphone</h5>
-       </div> 
-    </div>
-
-
-    <hr>
-     <div id="projects">
-          <div class="p-h-b">
-            <h1 class="p-heading">Products</h1>
+  <main>
+    <!-- Hero slider -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-slider" id="hero">
+          <div class="slide active">
+            <div>
+              <span class="tag"><i class="fa-solid fa-headphones"></i> Wireless Headphones</span>
+              <h1>Rocu Wireless <span>Headphone</span></h1>
+              <p>Experience next-level wireless gaming audio. Pro-grade sound, unrivaled comfort, RGB lighting and 40 hours of battery to elevate every session.</p>
+              <div class="hero-cta">
+                <a href="product.html?id=p13" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Shop now</a>
+                <span class="price-tag muted">Starting <b>Rs. 34,999</b></span>
+              </div>
+            </div>
+            <div class="slide-img"><img src="about/home-img.png" alt="Rocu Wireless Headphone"></div>
           </div>
-          <div class="add">
-            
+          <div class="slide">
+            <div>
+              <span class="tag"><i class="fa-solid fa-mobile-screen-button"></i> New launch</span>
+              <h1>Nova X15 Pro <span>200MP</span> Camera</h1>
+              <p>A 6.7" 120Hz AMOLED display, flagship performance and 80W fast charging. Upgrade today and get free wireless earbuds worth Rs. 18,999.</p>
+              <div class="hero-cta">
+                <a href="product.html?id=p1" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Buy now</a>
+                <a href="shop.html?cat=phone" class="btn btn-outline">All phones</a>
+              </div>
+            </div>
+            <div class="slide-img"><img src="images/products/p1.svg" alt="Nova X15 Pro"></div>
           </div>
-    </div>
-   
-    
+          <div class="slide">
+            <div>
+              <span class="tag"><i class="fa-solid fa-laptop"></i> Gaming season</span>
+              <h1>Titan G16 <span>Gaming</span> Laptop</h1>
+              <p>A 240Hz QHD display, RTX graphics and 32GB DDR5 RAM. Built for winners — now with 0% installments on all major bank cards.</p>
+              <div class="hero-cta">
+                <a href="product.html?id=p6" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Shop now</a>
+                <a href="shop.html?cat=laptop" class="btn btn-outline">All laptops</a>
+              </div>
+            </div>
+            <div class="slide-img"><img src="images/products/p6.svg" alt="Titan G16 Gaming laptop"></div>
+          </div>
+          <div class="slider-dots"></div>
+          <div class="slider-arrows">
+            <button class="icon-btn" data-slide="-1" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="icon-btn" data-slide="1" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="feature reveal"><i class="fa-solid fa-truck-fast"></i><div><h4>Fast delivery</h4><p>2–4 days nationwide</p></div></div>
+          <div class="feature reveal"><i class="fa-solid fa-rotate-left"></i><div><h4>7-day returns</h4><p>Hassle-free returns</p></div></div>
+          <div class="feature reveal"><i class="fa-solid fa-shield-halved"></i><div><h4>Secure payment</h4><p>Card, wallets & COD</p></div></div>
+          <div class="feature reveal"><i class="fa-solid fa-headset"></i><div><h4>24/7 support</h4><p>We're here to help</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow"><i class="fa-solid fa-tags"></i> Categories</span><h2 class="section-title">Browse by category</h2></div>
+          <a href="shop.html" class="btn btn-outline btn-sm">View all <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="categories" id="categories"></div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow"><i class="fa-solid fa-fire"></i> Our products</span><h2 class="section-title">Explore our products</h2></div>
+          <div class="tab-btns" id="home-tabs" style="border:none">
+            <button class="active" data-tab="best">Bestsellers</button>
+            <button data-tab="new">New arrivals</button>
+            <button data-tab="sale">On sale</button>
+          </div>
+        </div>
+        <div class="grid" id="home-grid"></div>
+        <div style="text-align:center;margin-top:36px"><a href="shop.html" class="btn btn-dark">View all products <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </section>
+
+    <!-- Deal of the day -->
+    <section class="section" id="deals" style="padding-top:0">
+      <div class="container">
+        <div class="deal reveal">
+          <div style="position:relative;z-index:1">
+            <span class="eyebrow" style="color:#7dd3fc"><i class="fa-solid fa-bolt" style="background:rgba(255,255,255,.1)"></i> Deal of the day</span>
+            <h2>Enhance your music experience</h2>
+            <p>SoundMax BassPods Pro — Active Noise Cancelling, wireless charging and all-day comfort. Limited stock at this price!</p>
+            <div class="countdown" id="countdown">
+              <div><b data-cd="d">00</b><small>Days</small></div>
+              <div><b data-cd="h">00</b><small>Hours</small></div>
+              <div><b data-cd="m">00</b><small>Min</small></div>
+              <div><b data-cd="s">00</b><small>Sec</small></div>
+            </div>
+            <button class="btn btn-primary" data-add="p15"><i class="fa-solid fa-cart-plus"></i> Grab the deal — Rs. 18,999</button>
+          </div>
+          <div class="deal-img"><img src="images/products/p15.svg" alt="BassPods Pro"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flash sale grid -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow"><i class="fa-solid fa-percent"></i> Hot deals</span><h2 class="section-title">Biggest discounts this week</h2></div>
+          <a href="shop.html?sort=discount" class="btn btn-outline btn-sm">See all deals <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="grid" id="deal-grid"></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow"><i class="fa-solid fa-comments"></i> Testimonials</span><h2 class="section-title">What our customers say</h2></div></div>
+        <div class="testimonials">
+          <div class="testi reveal"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>“Ordered the AeroBook Air on Monday and it arrived on Wednesday, perfectly packed. Genuine product with warranty. Highly recommended!”</p>
+            <div class="who"><span class="avatar">AK</span><div><b>Ayesha Khan</b><br><small class="muted">Karachi</small></div></div></div>
+          <div class="testi reveal"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <p>“Paid with JazzCash and it was super smooth. The headphones sound amazing and the support team answered all my questions quickly.”</p>
+            <div class="who"><span class="avatar" style="background:#7c3aed">BA</span><div><b>Bilal Ahmed</b><br><small class="muted">Lahore</small></div></div></div>
+          <div class="testi reveal"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>“Best prices I found online and cash on delivery made it stress-free. The order tracking is a really nice touch. Will shop again!”</p>
+            <div class="who"><span class="avatar" style="background:#16a34a">SM</span><div><b>Sara Malik</b><br><small class="muted">Islamabad</small></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section" style="padding:0">
+      <div class="container">
+        <div class="newsletter reveal">
+          <div><h2>Get 10% off your first order</h2><p>Subscribe for exclusive deals, new launches and member-only offers.</p></div>
+          <form id="newsletter">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email">
+            <button class="btn btn-dark" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-slot"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/home.js"></script>
 </body>
-<script src="app.js"></script>
-</html>   
-
+</html>

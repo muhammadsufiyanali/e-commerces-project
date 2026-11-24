@@ -1,0 +1,507 @@
+/* Seed product catalogue — loaded into localStorage on first visit */
+window.SEED_PRODUCTS = [
+  {
+    "id": "p1",
+    "name": "Nova X15 Pro",
+    "brand": "Nova",
+    "category": "phone",
+    "price": 189999,
+    "oldPrice": 219999,
+    "rating": 4.8,
+    "reviews": 312,
+    "stock": 24,
+    "badge": "Bestseller",
+    "image": "images/products/p1.svg",
+    "description": "6.7\" 120Hz AMOLED display, 200MP triple camera and a 5000mAh battery with 80W fast charging.",
+    "features": [
+      "6.7\" 120Hz AMOLED",
+      "200MP Triple Camera",
+      "12GB RAM / 256GB",
+      "5000mAh, 80W Charging"
+    ],
+    "createdAt": 1793491200000
+  },
+  {
+    "id": "p2",
+    "name": "Zentra Edge 5G",
+    "brand": "Zentra",
+    "category": "phone",
+    "price": 124999,
+    "oldPrice": 139999,
+    "rating": 4.6,
+    "reviews": 198,
+    "stock": 40,
+    "badge": "New",
+    "image": "images/products/p2.svg",
+    "description": "Slim curved-edge 5G phone with a 64MP night-mode camera and an all-day battery.",
+    "features": [
+      "6.5\" Curved OLED",
+      "64MP Night Camera",
+      "8GB RAM / 256GB",
+      "5G Ready"
+    ],
+    "createdAt": 1793577600000
+  },
+  {
+    "id": "p3",
+    "name": "Pulse Lite 4",
+    "brand": "Pulse",
+    "category": "phone",
+    "price": 49999,
+    "oldPrice": 59999,
+    "rating": 4.3,
+    "reviews": 521,
+    "stock": 75,
+    "badge": "Sale",
+    "image": "images/products/p3.svg",
+    "description": "An affordable everyday phone with a big display and a 6000mAh battery.",
+    "features": [
+      "6.6\" HD+ Display",
+      "50MP Dual Camera",
+      "6GB RAM / 128GB",
+      "6000mAh Battery"
+    ],
+    "createdAt": 1793664000000
+  },
+  {
+    "id": "p4",
+    "name": "Orbit Fold Z",
+    "brand": "Orbit",
+    "category": "phone",
+    "price": 349999,
+    "oldPrice": 0,
+    "rating": 4.7,
+    "reviews": 87,
+    "stock": 8,
+    "badge": "Premium",
+    "image": "images/products/p4.svg",
+    "description": "A foldable flagship that turns into a 7.6\" tablet, with a flagship chipset.",
+    "features": [
+      "7.6\" Foldable Display",
+      "Flagship Chipset",
+      "12GB RAM / 512GB",
+      "IPX8 Water Resistant"
+    ],
+    "createdAt": 1793750400000
+  },
+  {
+    "id": "p5",
+    "name": "AeroBook Air 14",
+    "brand": "Aero",
+    "category": "laptop",
+    "price": 259999,
+    "oldPrice": 289999,
+    "rating": 4.8,
+    "reviews": 143,
+    "stock": 15,
+    "badge": "Bestseller",
+    "image": "images/products/p5.svg",
+    "description": "Ultra-light 1.2kg laptop with a 2.8K display and up to 18 hours of battery.",
+    "features": [
+      "14\" 2.8K Display",
+      "Core i7 / 16GB RAM",
+      "512GB NVMe SSD",
+      "18h Battery"
+    ],
+    "createdAt": 1793836800000
+  },
+  {
+    "id": "p6",
+    "name": "Titan G16 Gaming",
+    "brand": "Titan",
+    "category": "laptop",
+    "price": 449999,
+    "oldPrice": 499999,
+    "rating": 4.9,
+    "reviews": 96,
+    "stock": 6,
+    "badge": "Hot",
+    "image": "images/products/p6.svg",
+    "description": "A 16\" 240Hz gaming beast with RTX graphics and a per-key RGB keyboard.",
+    "features": [
+      "16\" 240Hz QHD",
+      "RTX 4070 8GB",
+      "32GB DDR5 RAM",
+      "1TB SSD"
+    ],
+    "createdAt": 1793923200000
+  },
+  {
+    "id": "p7",
+    "name": "WorkPro 15",
+    "brand": "Aero",
+    "category": "laptop",
+    "price": 169999,
+    "oldPrice": 0,
+    "rating": 4.5,
+    "reviews": 210,
+    "stock": 30,
+    "badge": "",
+    "image": "images/products/p7.svg",
+    "description": "A reliable business laptop with a fingerprint reader and a full-size keyboard.",
+    "features": [
+      "15.6\" FHD IPS",
+      "Core i5 / 16GB RAM",
+      "512GB SSD",
+      "Fingerprint Login"
+    ],
+    "createdAt": 1794009600000
+  },
+  {
+    "id": "p8",
+    "name": "StudyMate 13",
+    "brand": "Pulse",
+    "category": "laptop",
+    "price": 89999,
+    "oldPrice": 104999,
+    "rating": 4.2,
+    "reviews": 340,
+    "stock": 50,
+    "badge": "Sale",
+    "image": "images/products/p8.svg",
+    "description": "A budget-friendly laptop made for students, online classes and everyday tasks.",
+    "features": [
+      "13.3\" FHD",
+      "Ryzen 3 / 8GB RAM",
+      "256GB SSD",
+      "Webcam with Privacy Shutter"
+    ],
+    "createdAt": 1794096000000
+  },
+  {
+    "id": "p9",
+    "name": "Chrono Fit 3",
+    "brand": "Chrono",
+    "category": "watch",
+    "price": 24999,
+    "oldPrice": 32999,
+    "rating": 4.5,
+    "reviews": 410,
+    "stock": 60,
+    "badge": "Sale",
+    "image": "images/products/p9.svg",
+    "description": "A fitness smartwatch with heart-rate, SpO2 and sleep tracking plus 100+ sport modes.",
+    "features": [
+      "1.9\" AMOLED",
+      "Heart Rate & SpO2",
+      "100+ Sport Modes",
+      "14-Day Battery"
+    ],
+    "createdAt": 1794182400000
+  },
+  {
+    "id": "p10",
+    "name": "Chrono Ultra",
+    "brand": "Chrono",
+    "category": "watch",
+    "price": 79999,
+    "oldPrice": 0,
+    "rating": 4.7,
+    "reviews": 122,
+    "stock": 18,
+    "badge": "New",
+    "image": "images/products/p10.svg",
+    "description": "A rugged titanium smartwatch with dual-band GPS and a 36-hour battery.",
+    "features": [
+      "Titanium Case",
+      "Dual-Band GPS",
+      "Bluetooth Calling",
+      "100m Water Resistant"
+    ],
+    "createdAt": 1794268800000
+  },
+  {
+    "id": "p11",
+    "name": "Nova Watch S",
+    "brand": "Nova",
+    "category": "watch",
+    "price": 39999,
+    "oldPrice": 45999,
+    "rating": 4.4,
+    "reviews": 233,
+    "stock": 35,
+    "badge": "",
+    "image": "images/products/p11.svg",
+    "description": "An elegant everyday smartwatch with an always-on display and contactless notifications.",
+    "features": [
+      "Always-On Display",
+      "Bluetooth Calling",
+      "Sleep Tracking",
+      "7-Day Battery"
+    ],
+    "createdAt": 1794355200000
+  },
+  {
+    "id": "p12",
+    "name": "Kids Track Watch",
+    "brand": "Pulse",
+    "category": "watch",
+    "price": 12999,
+    "oldPrice": 15999,
+    "rating": 4.1,
+    "reviews": 95,
+    "stock": 42,
+    "badge": "",
+    "image": "images/products/p12.svg",
+    "description": "A GPS kids watch with an SOS button, video calls and parental controls.",
+    "features": [
+      "Live GPS Location",
+      "SOS Button",
+      "4G Video Calls",
+      "Parental App"
+    ],
+    "createdAt": 1794441600000
+  },
+  {
+    "id": "p13",
+    "name": "Rocu Wireless Headphone",
+    "brand": "Rocu",
+    "category": "headphone",
+    "price": 34999,
+    "oldPrice": 42999,
+    "rating": 4.8,
+    "reviews": 502,
+    "stock": 28,
+    "badge": "Bestseller",
+    "image": "about/home-img.png",
+    "description": "Next-level wireless gaming audio with RGB lighting, a detachable mic and 40 hours of playtime.",
+    "features": [
+      "50mm Drivers",
+      "Active Noise Cancelling",
+      "40h Battery",
+      "RGB Lighting"
+    ],
+    "createdAt": 1794528000000
+  },
+  {
+    "id": "p14",
+    "name": "SoundMax ANC 700",
+    "brand": "SoundMax",
+    "category": "headphone",
+    "price": 45999,
+    "oldPrice": 0,
+    "rating": 4.7,
+    "reviews": 176,
+    "stock": 20,
+    "badge": "New",
+    "image": "images/products/p14.svg",
+    "description": "Studio-grade active noise cancelling headphones with Hi-Res audio support.",
+    "features": [
+      "Hybrid ANC",
+      "Hi-Res Audio",
+      "30h Battery",
+      "Multipoint Bluetooth"
+    ],
+    "createdAt": 1794614400000
+  },
+  {
+    "id": "p15",
+    "name": "BassPods Pro",
+    "brand": "SoundMax",
+    "category": "headphone",
+    "price": 18999,
+    "oldPrice": 24999,
+    "rating": 4.5,
+    "reviews": 640,
+    "stock": 90,
+    "badge": "Sale",
+    "image": "images/products/p15.svg",
+    "description": "True wireless earbuds with ANC, transparency mode and a wireless charging case.",
+    "features": [
+      "Active Noise Cancelling",
+      "Transparency Mode",
+      "Wireless Charging",
+      "IPX5 Sweatproof"
+    ],
+    "createdAt": 1794700800000
+  },
+  {
+    "id": "p16",
+    "name": "Rocu Studio Monitor",
+    "brand": "Rocu",
+    "category": "headphone",
+    "price": 22999,
+    "oldPrice": 27999,
+    "rating": 4.3,
+    "reviews": 88,
+    "stock": 3,
+    "badge": "",
+    "image": "images/products/p16.svg",
+    "description": "Wired studio headphones with a flat frequency response for mixing and production.",
+    "features": [
+      "Flat Studio Response",
+      "Detachable Cable",
+      "Closed-Back Design",
+      "Foldable"
+    ],
+    "createdAt": 1794787200000
+  },
+  {
+    "id": "p17",
+    "name": "Nova Tab 11",
+    "brand": "Nova",
+    "category": "tablet",
+    "price": 99999,
+    "oldPrice": 114999,
+    "rating": 4.6,
+    "reviews": 150,
+    "stock": 22,
+    "badge": "Sale",
+    "image": "images/products/p17.svg",
+    "description": "An 11\" 2K tablet with quad speakers, made for streaming, study and drawing.",
+    "features": [
+      "11\" 2K 120Hz",
+      "Quad Speakers",
+      "Stylus Support",
+      "8000mAh Battery"
+    ],
+    "createdAt": 1794873600000
+  },
+  {
+    "id": "p18",
+    "name": "Zentra Pad Mini",
+    "brand": "Zentra",
+    "category": "tablet",
+    "price": 64999,
+    "oldPrice": 0,
+    "rating": 4.4,
+    "reviews": 74,
+    "stock": 16,
+    "badge": "New",
+    "image": "images/products/p18.svg",
+    "description": "A compact 8.7\" tablet that fits in one hand, ideal for reading and travel.",
+    "features": [
+      "8.7\" Display",
+      "4G LTE",
+      "4GB / 64GB",
+      "Kids Mode"
+    ],
+    "createdAt": 1794960000000
+  },
+  {
+    "id": "p19",
+    "name": "BoomBox Mini",
+    "brand": "SoundMax",
+    "category": "accessory",
+    "price": 9999,
+    "oldPrice": 12999,
+    "rating": 4.5,
+    "reviews": 380,
+    "stock": 70,
+    "badge": "Sale",
+    "image": "images/products/p19.svg",
+    "description": "A portable waterproof Bluetooth speaker with deep bass and 20 hours of play.",
+    "features": [
+      "360° Sound",
+      "IP67 Waterproof",
+      "20h Battery",
+      "Party Pairing"
+    ],
+    "createdAt": 1795046400000
+  },
+  {
+    "id": "p20",
+    "name": "ProPad Controller",
+    "brand": "Titan",
+    "category": "accessory",
+    "price": 11999,
+    "oldPrice": 0,
+    "rating": 4.6,
+    "reviews": 265,
+    "stock": 45,
+    "badge": "Hot",
+    "image": "images/products/p20.svg",
+    "description": "A wireless gamepad for PC and mobile with Hall-effect sticks and zero drift.",
+    "features": [
+      "Hall-Effect Sticks",
+      "Bluetooth + 2.4GHz",
+      "Rumble Motors",
+      "30h Battery"
+    ],
+    "createdAt": 1795132800000
+  },
+  {
+    "id": "p21",
+    "name": "PowerCore 20K",
+    "brand": "Pulse",
+    "category": "accessory",
+    "price": 6999,
+    "oldPrice": 8999,
+    "rating": 4.4,
+    "reviews": 720,
+    "stock": 120,
+    "badge": "",
+    "image": "images/products/p21.svg",
+    "description": "A 20000mAh power bank with 65W PD output that can even charge laptops.",
+    "features": [
+      "20000mAh",
+      "65W USB-C PD",
+      "3 Outputs",
+      "LED Display"
+    ],
+    "createdAt": 1795219200000
+  },
+  {
+    "id": "p22",
+    "name": "SnapShot Z50",
+    "brand": "Orbit",
+    "category": "camera",
+    "price": 239999,
+    "oldPrice": 269999,
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 9,
+    "badge": "Premium",
+    "image": "images/products/p22.svg",
+    "description": "A 24MP mirrorless camera with 4K60 video and fast eye-tracking autofocus.",
+    "features": [
+      "24MP APS-C Sensor",
+      "4K 60fps Video",
+      "Eye-Tracking AF",
+      "Flip Screen"
+    ],
+    "createdAt": 1795305600000
+  },
+  {
+    "id": "p23",
+    "name": "ActionCam 4K",
+    "brand": "Orbit",
+    "category": "camera",
+    "price": 44999,
+    "oldPrice": 52999,
+    "rating": 4.3,
+    "reviews": 143,
+    "stock": 0,
+    "badge": "",
+    "image": "images/products/p23.svg",
+    "description": "A waterproof action camera with HyperSmooth stabilization for adventure shots.",
+    "features": [
+      "4K Video",
+      "Image Stabilization",
+      "10m Waterproof",
+      "Wi-Fi Sharing"
+    ],
+    "createdAt": 1795392000000
+  },
+  {
+    "id": "p24",
+    "name": "Lumi Vlog Kit",
+    "brand": "Zentra",
+    "category": "camera",
+    "price": 74999,
+    "oldPrice": 0,
+    "rating": 4.2,
+    "reviews": 51,
+    "stock": 12,
+    "badge": "New",
+    "image": "images/products/p24.svg",
+    "description": "A compact vlogging camera kit with a mic, tripod grip and front-facing screen.",
+    "features": [
+      "Front Flip Screen",
+      "External Mic Included",
+      "Tripod Grip",
+      "1080p 120fps"
+    ],
+    "createdAt": 1795478400000
+  }
+];

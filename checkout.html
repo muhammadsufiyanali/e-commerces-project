@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — eTrade</title>
+  <meta name="theme-color" content="#1a8fdd">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230f172a'/%3E%3Ctext x='50' y='70' font-size='64' font-family='Arial' font-weight='700' fill='%231a8fdd' text-anchor='middle'%3Ee%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div id="checkout-view">
+      <div class="page-head">
+        <div class="breadcrumb" style="padding:0 0 8px"><a href="index.html">Home</a> / <span>Checkout</span></div>
+        <h1>Checkout</h1>
+        <div class="steps">
+          <div class="step done"><span class="n"><i class="fa-solid fa-check"></i></span><span class="lbl">Cart</span></div><div class="step-line"></div>
+          <div class="step active"><span class="n">2</span><span class="lbl">Shipping & payment</span></div><div class="step-line"></div>
+          <div class="step"><span class="n">3</span><span class="lbl">Confirmation</span></div>
+        </div>
+      </div>
+
+      <form class="checkout" id="checkout-form" novalidate>
+        <div>
+          <div class="panel">
+            <h3><i class="fa-solid fa-user"></i> Contact information</h3>
+            <p class="muted" id="login-hint" style="font-size:.88rem;margin:-8px 0 16px">Have an account? <a href="account.html?next=checkout.html" style="color:var(--primary);font-weight:600">Log in</a> for faster checkout.</p>
+            <div class="form-grid">
+              <div class="field"><label for="name">Full name *</label><input id="name" name="name" autocomplete="name" required><span class="err">Please enter your name</span></div>
+              <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" placeholder="03XX-XXXXXXX" autocomplete="tel" required pattern="^(\+92|0)?3\d{2}-?\d{7}$"><span class="err">Enter a valid mobile number (e.g. 0300-1234567)</span></div>
+              <div class="field full"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err">Enter a valid email</span></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3><i class="fa-solid fa-location-dot"></i> Shipping address</h3>
+            <div class="form-grid">
+              <div class="field full"><label for="address">Street address *</label><input id="address" name="address" autocomplete="street-address" placeholder="House #, street, area" required><span class="err">Please enter your address</span></div>
+              <div class="field"><label for="city">City *</label>
+                <select id="city" name="city" required>
+                  <option value="">Select city</option>
+                  <option>Karachi</option><option>Lahore</option><option>Islamabad</option><option>Rawalpindi</option><option>Faisalabad</option><option>Multan</option><option>Peshawar</option><option>Quetta</option><option>Hyderabad</option><option>Sialkot</option>
+                </select><span class="err">Please select a city</span></div>
+              <div class="field"><label for="zip">Postal code</label><input id="zip" name="zip" inputmode="numeric" autocomplete="postal-code"></div>
+              <div class="field full"><label for="notes">Order notes (optional)</label><textarea id="notes" name="notes" placeholder="e.g. Call before delivery" style="min-height:70px"></textarea></div>
+            </div>
+            <h4 style="margin:20px 0 12px;font-size:.95rem">Delivery method</h4>
+            <div class="ship-opts">
+              <label class="pay-opt active"><input type="radio" name="ship" value="standard" checked><div><b>Standard</b><small id="ship-std-lbl">2–4 working days</small></div></label>
+              <label class="pay-opt"><input type="radio" name="ship" value="express"><div><b>Express</b><small id="ship-exp-lbl">Next day delivery</small></div></label>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3><i class="fa-solid fa-credit-card"></i> Payment method</h3>
+            <div class="pay-methods" id="pay-methods">
+              <label class="pay-opt active"><input type="radio" name="pay" value="card" checked><span class="pi" style="background:#1e3a8a"><i class="fa-solid fa-credit-card" style="font-size:1rem"></i></span><div><b>Credit / Debit card</b><small>Visa, Mastercard, UnionPay</small></div><span class="brands"><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i></span></label>
+              <div class="pay-details show" data-pay="card">
+                <div class="card-preview">
+                  <div class="cp-top"><span class="chipc"></span><i class="fa-brands fa-cc-visa" id="cp-brand"></i></div>
+                  <div class="cp-num" id="cp-num">•••• •••• •••• ••••</div>
+                  <div class="cp-bottom"><div><small>Card holder</small><b id="cp-name">YOUR NAME</b></div><div><small>Expires</small><b id="cp-exp">MM/YY</b></div></div>
+                </div>
+                <div class="form-grid">
+                  <div class="field full"><label for="cc-num">Card number</label><div class="input-icon"><i class="fa-regular fa-credit-card"></i><input id="cc-num" inputmode="numeric" autocomplete="cc-number" placeholder="4242 4242 4242 4242" maxlength="19"></div><span class="err">Enter a valid card number</span></div>
+                  <div class="field full"><label for="cc-name">Name on card</label><input id="cc-name" autocomplete="cc-name" placeholder="As printed on card"><span class="err">Enter the card holder's name</span></div>
+                  <div class="field"><label for="cc-exp">Expiry (MM/YY)</label><input id="cc-exp" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5"><span class="err">Invalid or expired date</span></div>
+                  <div class="field"><label for="cc-cvv">CVV</label><input id="cc-cvv" inputmode="numeric" autocomplete="cc-csc" placeholder="123" maxlength="4" type="password"><span class="err">Invalid CVV</span></div>
+                </div>
+                <p class="muted" style="font-size:.78rem;margin-top:10px"><i class="fa-solid fa-circle-info"></i> Demo mode — no real payment is made. Test card: 4242 4242 4242 4242, any future date, any CVV.</p>
+              </div>
+
+              <label class="pay-opt"><input type="radio" name="pay" value="jazzcash"><span class="pi" style="background:#d11f2f">JC</span><div><b>JazzCash</b><small>Pay with your JazzCash mobile account</small></div></label>
+              <div class="pay-details" data-pay="jazzcash">
+                <div class="field"><label for="jc-num">JazzCash mobile number</label><input id="jc-num" type="tel" placeholder="03XX-XXXXXXX"><span class="err">Enter a valid mobile number</span></div>
+                <p class="muted" style="font-size:.8rem;margin-top:8px">You'll receive a prompt on your phone to approve the payment with your MPIN.</p>
+              </div>
+
+              <label class="pay-opt"><input type="radio" name="pay" value="easypaisa"><span class="pi" style="background:#16a34a">EP</span><div><b>Easypaisa</b><small>Pay with your Easypaisa wallet</small></div></label>
+              <div class="pay-details" data-pay="easypaisa">
+                <div class="field"><label for="ep-num">Easypaisa mobile number</label><input id="ep-num" type="tel" placeholder="03XX-XXXXXXX"><span class="err">Enter a valid mobile number</span></div>
+              </div>
+
+              <label class="pay-opt"><input type="radio" name="pay" value="bank"><span class="pi" style="background:#475569"><i class="fa-solid fa-building-columns" style="font-size:1rem"></i></span><div><b>Bank transfer</b><small>Direct transfer to our bank account</small></div></label>
+              <div class="pay-details" data-pay="bank">
+                <div class="panel" style="background:var(--surface-2);padding:16px;font-size:.88rem">
+                  <b>eTrade Pvt. Ltd.</b><br>Bank: Demo Bank Ltd.<br>IBAN: PK00 DEMO 0000 1234 5678 9012<br><span class="muted">Use your order number as the payment reference. Your order ships once payment is confirmed.</span>
+                </div>
+              </div>
+
+              <label class="pay-opt"><input type="radio" name="pay" value="cod"><span class="pi" style="background:#f59e0b"><i class="fa-solid fa-money-bill-wave" style="font-size:1rem"></i></span><div><b>Cash on delivery</b><small>Pay when you receive your order</small></div></label>
+              <div class="pay-details" data-pay="cod"><p class="muted" style="font-size:.88rem">Please keep the exact amount ready. A small COD verification call may be made before dispatch.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel summary">
+          <h3><i class="fa-solid fa-receipt"></i> Order summary</h3>
+          <div id="sum-items"></div>
+          <div class="coupon"><input id="coupon" placeholder="Coupon code" aria-label="Coupon code"><button type="button" class="btn btn-dark btn-sm" id="apply-coupon">Apply</button></div>
+          <p class="coupon-hint">Try <b>WELCOME10</b>, <b>SAVE5000</b> or <b>FREESHIP</b></p>
+          <div id="sum-totals"></div>
+          <label class="check" style="margin:14px 0"><input type="checkbox" id="terms" required> I agree to the terms & return policy</label>
+          <button class="btn btn-primary btn-block" id="place" type="submit"><i class="fa-solid fa-lock"></i> Place order</button>
+          <div class="secure-note"><i class="fa-solid fa-shield-halved"></i> 256-bit SSL secure checkout</div>
+        </aside>
+      </form>
+    </div>
+
+    <div id="success-view" class="hidden"></div>
+  </main>
+
+  <div class="pay-processing" id="processing"><div><div class="spinner"></div><h3>Processing your payment…</h3><p style="opacity:.75">Please don't close this window.</p></div></div>
+
+  <div id="site-footer-slot"></div>
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
