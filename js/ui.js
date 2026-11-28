@@ -164,6 +164,7 @@
       </div>
       <div class="footer-bottom">
         <span>© ${new Date().getFullYear()} eTrade. Demo store — all rights reserved.</span>
+        <span class="credit">Designed &amp; developed by <a href="https://saconsultancy.pk/futurevision/" target="_blank" rel="noopener">Future Vision Enterprises</a></span>
         <div class="pay-icons"><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-cc-paypal"></i><i class="fa-brands fa-cc-amex"></i><i class="fa-solid fa-money-bill-wave"></i></div>
       </div>
     </div></footer>
